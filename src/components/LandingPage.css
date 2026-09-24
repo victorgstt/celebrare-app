@@ -1,0 +1,417 @@
+/* Landing Page — valores do Figma (frames 1:2 e 20:190, artboard 1440px).
+   Em 1440px o layout bate com o design; abaixo disso as colunas se ajustam e empilham. */
+
+.lp {
+  min-height: 100vh;
+  background: #fffaf4;
+  color: #000;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  line-height: normal;
+  overflow-x: hidden;
+}
+
+.lp p,
+.lp h1,
+.lp h2 {
+  margin: 0;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.lp h1,
+.lp h2 {
+  color: #000;
+  letter-spacing: normal;
+}
+
+.lp-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* ---------- Header ---------- */
+.lp-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: 124px;
+  padding: 0 38px 0 48.77px;
+}
+
+.lp-logo {
+  display: flex;
+  align-items: flex-start;
+  flex: none;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.lp-logo__c { width: 4.2428em; height: auto; }
+.lp-logo__text { width: 10.0518em; height: auto; margin: 1.535em 0 0 -0.04em; }
+
+.lp-nav {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+
+.lp-nav a {
+  font-size: 20px;
+  line-height: 29px;
+  color: #000;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s ease;
+}
+
+.lp-nav a:hover { color: #ef512c; }
+
+.lp-organizer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: none;
+  min-height: 48px;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+
+.lp-organizer span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid #cac4d0;
+  border-radius: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #49454f;
+  white-space: nowrap;
+  transition: background 0.2s ease;
+}
+
+.lp-organizer:hover span { background: rgba(73, 69, 79, 0.08); }
+
+.lp-organizer--menu,
+.lp-menu-toggle { display: none; }
+
+.lp-menu-toggle {
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  color: #000;
+  cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+.lp-hero {
+  display: grid;
+  grid-template-columns: 745fr 695fr;
+  padding: 88.52px 0 50px;
+}
+
+.lp-hero__col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+}
+
+.lp-hero__col--right { padding-right: 62px; }
+
+.lp-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Alice', serif;
+  text-align: center;
+}
+
+.lp .lp-heading__lg {
+  position: relative;
+  font-family: inherit;
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.lp .lp-heading__md {
+  position: relative;
+  margin-top: -0.275em;
+  font-size: 40px;
+  line-height: 46px;
+  color: #ef512c;
+}
+
+/* Faíscas e sublinhados em "em" para acompanhar o tamanho da fonte */
+.lp-deco {
+  position: absolute;
+  height: auto;
+  max-width: none;
+  pointer-events: none;
+}
+
+.lp-deco--sparkle1 { left: 5.44em; top: -0.0942em; width: 0.1934em; }
+.lp-deco--sparkle2 { left: 5.5056em; top: 0.2188em; width: 0.2131em; }
+.lp-deco--sparkle3 { left: 5.5504em; top: 0.244em; width: 0.4866em; }
+.lp-deco--organiza { left: 5.0405em; top: 1.0898em; width: 2.4778em; }
+.lp-deco--unico { left: 3.3475em; top: 0.967em; width: 2.1157em; }
+
+.lp-pills {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  width: 100%;
+  max-width: 381px;
+  margin: 72px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 6.5px 24px;
+  box-sizing: border-box;
+  border: 2px solid #ef512c;
+  border-radius: 30px;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.lp-pill--tall { min-height: 91px; }
+
+.lp .lp-more {
+  margin-top: 11px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 29px;
+  color: #e32998;
+}
+
+.lp-cta {
+  margin-top: 88px;
+  padding: 12px;
+  border: 1px solid #ef512c;
+  border-radius: 8px;
+  background: #ef512c;
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.52);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #f5f5f5;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lp-cta:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 5px 5px 6px 0 rgba(0, 0, 0, 0.52);
+}
+
+/* Monitor + celular: caixa 530×619 do Figma, filhos em % para escalar junto */
+.lp-devices {
+  position: relative;
+  left: -20px;
+  width: 100%;
+  max-width: 530px;
+  aspect-ratio: 530 / 619;
+  margin-top: 52px;
+}
+
+.lp-devices img {
+  position: absolute;
+  object-fit: cover;
+  pointer-events: none;
+  transform: scaleX(-1);
+}
+
+.lp-devices__shadow { left: 7.481%; top: 0; width: 92.453%; height: 81.422%; opacity: 0.7; }
+.lp-devices__monitor { left: 8.236%; top: 0; width: 90.377%; height: 71.082%; }
+.lp .lp-devices__phone {
+  left: 1.628%;
+  top: 51.73%;
+  width: 57.996%;
+  height: 46.697%;
+  transform: rotate(-176.46deg) scaleY(-1);
+}
+
+/* ---------- Como funciona ---------- */
+.lp-how__steps {
+  position: relative;
+  padding: 104px 16px 134px;
+}
+
+.lp-confetti {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.lp-confetti img { flex: none; max-width: none; }
+
+.lp-confetti--left { left: 70px; top: 48px; width: 135.922px; height: 152.347px; }
+.lp-confetti--left img { transform: rotate(-160.9deg) scaleY(-1); }
+.lp-confetti--right { right: 81.03px; top: 188px; width: 146.967px; height: 158.377px; }
+.lp-confetti--right img { transform: rotate(27.34deg); }
+
+.lp-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 269px);
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.lp-step {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Linha tracejada rosa entre os quadrados (Line 1–3 do Figma: 3px, traço 8 / espaço 8) */
+.lp-step + .lp-step::before {
+  content: '';
+  position: absolute;
+  top: 29px;
+  right: calc(50% + 30.5px);
+  width: calc(100% - 61px);
+  height: 3px;
+  background: repeating-linear-gradient(90deg, #e32998 0 8px, transparent 8px 16px);
+}
+
+.lp-step__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 61px;
+  height: 61px;
+  padding-bottom: 6px;
+  box-sizing: border-box;
+  border-radius: 15px;
+  background: rgba(239, 81, 44, 0.75);
+  font-family: 'Alice', serif;
+  font-size: 48px;
+  line-height: 55px;
+  color: #fff;
+}
+
+.lp .lp-step__text {
+  margin-top: 17px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.lp-gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 346px;
+  margin-bottom: 98px;
+  padding: 0 16px;
+  background: #d9d9d9;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 1280px) {
+  .lp-header { padding: 0 24px; }
+  .lp-nav { gap: 28px; }
+  .lp-nav a { font-size: 18px; }
+  .lp-steps { grid-template-columns: repeat(4, minmax(0, 240px)); }
+  .lp-confetti--left { left: 8px; }
+  .lp-confetti--right { right: 8px; }
+}
+
+@media (max-width: 1100px) {
+  .lp-header { height: 96px; }
+  .lp-logo { font-size: 13px; margin-bottom: 14px; }
+  .lp-menu-toggle { display: flex; }
+  .lp-organizer--header { margin-left: auto; }
+
+  .lp-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 24px 20px;
+    background: #fffaf4;
+    border-bottom: 1px solid rgba(239, 81, 44, 0.25);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .lp-nav--open { display: flex; }
+  .lp-nav a { padding: 12px 0; font-size: 20px; }
+
+  .lp-hero {
+    grid-template-columns: 1fr;
+    row-gap: 80px;
+    padding: 48px 24px 64px;
+  }
+
+  .lp-hero__col--right { padding-right: 0; }
+  .lp-devices { left: 0; }
+
+  .lp-how__steps { padding: 72px 24px 96px; }
+  .lp-confetti { display: none; }
+
+  .lp-steps {
+    grid-template-columns: repeat(2, minmax(0, 300px));
+    row-gap: 48px;
+  }
+
+  .lp-step + .lp-step::before { display: none; }
+  .lp-gallery { height: 280px; margin-bottom: 64px; }
+}
+
+@media (max-width: 600px) {
+  .lp-header { padding: 0 16px; height: 80px; }
+  .lp-logo { font-size: 10px; margin-bottom: 10px; }
+  .lp-organizer--header { display: none; }
+  .lp-organizer--menu { display: flex; justify-content: flex-start; margin-top: 12px; }
+
+  .lp-hero { row-gap: 64px; padding: 32px 16px 48px; }
+  .lp .lp-heading__lg { font-size: 36px; line-height: 42px; }
+  .lp .lp-heading__md { font-size: 30px; line-height: 35px; }
+  .lp-pills { margin-top: 48px; gap: 16px; }
+  .lp-pill { font-size: 20px; line-height: 28px; min-height: 48px; }
+  .lp-pill--tall { min-height: 48px; }
+  .lp-cta { margin-top: 40px; }
+  .lp-devices { margin-top: 32px; }
+
+  .lp-how__steps { padding: 56px 16px 72px; }
+  .lp-steps { grid-template-columns: minmax(0, 320px); row-gap: 40px; }
+  .lp .lp-step__text { font-size: 20px; }
+  .lp-gallery { height: 220px; margin-bottom: 48px; font-size: 20px; }
+}
