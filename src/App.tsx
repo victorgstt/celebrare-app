@@ -398,13 +398,7 @@ function App() {
     switch (view) {
       case 'landing':
         return (
-          <LandingPage 
-            events={events}
-            onNavigateToDashboard={() => setView(currentUser ? 'dashboard' : 'auth')}
-            onNavigateToEvent={handleViewEventPage}
-            theme={theme}
-            toggleTheme={toggleTheme}
-          />
+          <LandingPage onNavigateToDashboard={() => setView(currentUser ? 'dashboard' : 'auth')} />
         );
       
       case 'auth':
@@ -475,13 +469,7 @@ function App() {
       
       default:
         return (
-          <LandingPage 
-            events={events} 
-            onNavigateToDashboard={() => setView('auth')} 
-            onNavigateToEvent={handleViewEventPage} 
-            theme={theme}
-            toggleTheme={toggleTheme}
-          />
+          <LandingPage onNavigateToDashboard={() => setView('auth')} />
         );
     }
   };
